@@ -14,6 +14,48 @@ public class Beer {
 	
 	@Column(name = "beer_type")
 	private String beerType;
+	@Column(name = "beer_name")
+	private String beerName;
+	@Column(name = "abv")
+	private String abv;
+	@Column(name = "beer_brand")
+	private String beerBrand;
+	@Column(name = "rating")
+	private String rating;
+	
+	public String getBeerName() {
+		return beerName;
+	}
+
+	public void setBeerName(String beerName) {
+		this.beerName = beerName;
+	}
+
+	public String getAbv() {
+		return abv;
+	}
+
+	public void setAbv(String abv) {
+		this.abv = abv;
+	}
+
+	public String getBeerBrand() {
+		return beerBrand;
+	}
+
+	public void setBeerBrand(String beerBrand) {
+		this.beerBrand = beerBrand;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
+
+
 
 	public Beer() {
 		super();
@@ -37,7 +79,8 @@ public class Beer {
 
 	@Override
 	public String toString() {
-		return "Beer [id=" + id + ", beerType=" + beerType + "]";
+		return "Beer ID is: " + id + ", Beer Type: " + beerType + ", Beer Name: " + beerName + ", ABV: " + abv + "%, Brand: "
+				+ beerBrand + "\n Rating: " + rating;
 	}
 
 }
