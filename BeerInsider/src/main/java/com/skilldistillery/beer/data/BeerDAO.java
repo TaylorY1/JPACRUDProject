@@ -2,6 +2,7 @@ package com.skilldistillery.beer.data;
 
 import java.util.List;
 
+
 import com.skilldistillery.beer.entities.Beer;
 
 public interface BeerDAO {
@@ -18,7 +19,7 @@ public interface BeerDAO {
 
 //	Beer deleteBeer(Beer beer);
 
-	Beer updateBeer(int id, Beer beer);
+	Beer updateBeer(int beerId, Beer beer);
 
 	boolean deleteBeer(int id);
 

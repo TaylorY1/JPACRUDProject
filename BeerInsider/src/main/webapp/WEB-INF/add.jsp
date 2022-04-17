@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Beer to List</title>
-<jsp:include page="../bootstrapHead.jsp" />
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 	<form action="addBeer.do" method="POST">

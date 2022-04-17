@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Beer Insider!</title>
+<jsp:include page="bootstrapHead.jsp" />
 </head>
 <body>
 	<h1>Please insert a Beer ID number to Delete It</h1>
 
-	<form action="deleteBeer.do" method="get">
+	<form action="deleteBeer.do" method="post">
 		<label for="beerId">Beer ID:</label> <input type="text" name="beerId">
 		<input type="submit" value="Delete">
 	</form>

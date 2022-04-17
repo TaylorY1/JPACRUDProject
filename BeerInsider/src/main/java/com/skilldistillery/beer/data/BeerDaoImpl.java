@@ -43,12 +43,17 @@ public class BeerDaoImpl implements BeerDAO {
 	}
 	@Override
 	public boolean deleteBeer(int id) {
-		boolean flag = true;
+		boolean flag = false;
 		
-		em.remove(id);
-	
-	//	em.persist(beer);
-		
+		Beer rogue = em.find(Beer.class, id);
+		if (rogue != null) {
+			em.remove(rogue);
+			em.flush();
+			
+			flag = !em.contains(rogue);
+			
+			
+		}
 		return flag;
 		
 	}
@@ -62,8 +67,9 @@ public class BeerDaoImpl implements BeerDAO {
 		updatedBeer.setAbv(beer.getAbv());
 		updatedBeer.setBeerBrand(beer.getBeerBrand());
 		updatedBeer.setRating(beer.getRating());
-		em.persist(beer);
-	//	em.flush();
+		em.flush();
+	//	em.persist(updatedBeer);
+		
 		return updatedBeer;
 	}
 
