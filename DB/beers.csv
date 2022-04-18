@@ -1,0 +1,21 @@
+id,beer_type,beer_name,abv,beer_brand,rating
+1,IPA,"Rebel IPA",7.50,"Sam Adams",2
+2,Lager,"Coors Light",4.20,Coors,7
+3,IPA,"Odell IPA",7.00,Odell,8
+4,Sour,"Silent Disco",7.00,Odell,5
+5,Stout,"Cherry Charade Stout",7.50,Odell,6
+6,Ale,"Arrogant Bastard",4.70,Rogue,6
+7,Pilsner,"Slow Pour Pils",5.20,"Bierstadt Lagerhaus",4
+8,Seltzer,Margarita,4.40,Truly,1
+9,Lager,"Modelo Negra",5.40,Modelo,7
+10,IPA,"Lagunitas IPA",6.20,Lagunitas,0
+11,Lager,"Boston Lager",5.00,"Samuel Adams",4
+12,Cider,"Crisp Apple",5.00,"Angry Orchard",5
+13,Stout,"Dragons Milk",11.00,"New Holland",9
+14,Lager,"Bud Light",5.00,Budweiser,5
+15,IPA,"Voodoo Ranger Imperial",9.00,"New Belgium",8
+16,IPA,"Voodoo Ranger Juice Force",9.50,"New Belgium",8
+17,Tripel,"Trippel Belgian Styl",8.50,"New Belgium",4
+18,Ale,"Dead Guy",6.80,Rogue,5
+19,Stout,"Double Chocolate",9.00,Rogue,5
+20,Wheat,"Colorado Sweep",6.50,"Lone Tree Brewing",4
